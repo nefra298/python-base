@@ -1,4 +1,4 @@
-def tonumber(inp):
+def ToNumeric(inp):
     try:
         val = int(inp)
         return val
@@ -9,11 +9,12 @@ def tonumber(inp):
         except ValueError:
             val=None
             return val
-inp1=input("Type a number1:")
-inp2=input("Type a number2:")
-a=tonumber(inp1)
-b=tonumber(inp2)
+print ("Calculating the area of a rectangle")
+inp1=input("Type a length:")
+inp2=input("Type a width:")
+a=ToNumeric(inp1)
+b=ToNumeric(inp2)
 if (a is not None) and (b is not None):
-    print(a*b)
+    print("The area of a rectangle:",a*b)
 else:
-    print("NaN")
+    print("Please use numeric values!")
