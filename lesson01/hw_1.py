@@ -1,4 +1,4 @@
-def ToNumeric(inp):
+def tonumeric(inp):
     try:
         val = int(inp)
         return val
@@ -7,14 +7,16 @@ def ToNumeric(inp):
             val = float(inp)
             return val
         except ValueError:
-            val=None
+            val = None
             return val
+
+
 print ("Calculating the area of a rectangle")
-inp1=input("Type a length:")
-inp2=input("Type a width:")
-a=ToNumeric(inp1)
-b=ToNumeric(inp2)
+inp1 = input("Type a length:")
+inp2 = input("Type a width:")
+a = tonumeric(inp1)
+b = tonumeric(inp2)
 if (a is not None) and (b is not None):
-    print("The area of a rectangle:",a*b)
+    print("The area of a rectangle:", a * b)
 else:
     print("Please use numeric values!")
