@@ -14,10 +14,10 @@ def tonumeric(inp):
             return val
 
 
-print ("Calculating the area of a circle")
+print("Calculating the area of a circle")
 inp1 = input("Enter a radius:")
 r = tonumeric(inp1)
-if (r is not None):
+if r is not None:
     area = math.pi * r * r
     print("The area of a rectangle:", area)
 else:

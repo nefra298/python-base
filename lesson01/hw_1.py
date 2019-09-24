@@ -11,7 +11,7 @@ def tonumeric(inp):
             return val
 
 
-print ("Calculating the area of a rectangle")
+print("Calculating the area of a rectangle")
 inp1 = input("Type a length:")
 inp2 = input("Type a width:")
 a = tonumeric(inp1)
