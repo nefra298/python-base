@@ -37,4 +37,4 @@ while quantity != 0:
         x = input("Взять спичек:")
     quantity = quantity - int(x)
     moves = moves + 1
-print("Победил игрок", player(moves + 1))
+print("Победил игрок", player(moves))
