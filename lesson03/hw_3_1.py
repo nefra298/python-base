@@ -17,7 +17,7 @@ def input_check_int(inp, msg=False):
         return True
     else:
         if msg:
-            print("Вы ввели не целое число")
+            print("Вы ввели не целое число",id)
         return False
 
 
