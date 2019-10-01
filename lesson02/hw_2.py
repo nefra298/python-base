@@ -13,7 +13,7 @@ def tonumeric(inp):
 
 def positive(inp):
     if inp > 0:
-        x = a + 1
+        x = inp + 1
     else:
         x = 1
     return x
