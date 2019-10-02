@@ -19,6 +19,6 @@ inp1 = input("Enter a radius:")
 r = tonumeric(inp1)
 if r is not None:
     area = math.pi * r * r
-    print("The area of a rectangle:", area)
+    print("The area of a circle:", area)
 else:
     print("Please use numeric values!")
