@@ -42,22 +42,28 @@ if __name__ == '__main__':
             a = input("Введите длинну стороны А:")
             b = input("Введите длинну стороны B:")
             c = input("Введите длинну стороны C:")
-            if (a is not None) and (b is not None) and (c is not None):
+            if (tonumeric(a) is not None) and (tonumeric(b) is not None) and (tonumeric(c) is not None):
                 triangle(float(a),float(b),float (c))
                 input("Нажмите любую кнопку что бы продолжить")
+            else:
+                print("Введены не корректные значения")
         elif menu_item == "2":
             print("Расчет площади круга")
             r = input("Введите радиус круга:")
-            if (r is not None):
+            if (tonumeric(r) is not None):
                 circle(float(r))
                 input("Нажмите любую кнопку что бы продолжить")
+            else:
+                print("Введены не корректные значения")
         elif menu_item == "3":
             print("Расчет площади прямоугольника")
             a = input("Введите длинну стороны А:")
             b = input("Введите длинну стороны B:")
-            if (a is not None) and (b is not None):
+            if (tonumeric(a) is not None) and (tonumeric(b) is not None):
                 rect(float(a), float(b))
                 input("Нажмите любую кнопку что бы продолжить")
+            else:
+                print("Введены не корректные значения")
         else:
             print("Не верно укзан пункт меню")
             continue
