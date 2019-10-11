@@ -10,7 +10,7 @@ def text_stat(inp, *args):
         n = 0
         for i in inp:
             if i.isdigit():
-                n = n + 1
+                n += 1
         return n
 
     # Считам строки
@@ -65,7 +65,7 @@ def text_stat(inp, *args):
     else:
         word_string = words_list(text_string)
 
-    out = []
+    out = {}
     out["words_stat"] = stats(word_string)
     out["chars_stat"] = stats(text_string)
     out["digit"] = calc_digit(text_string)
